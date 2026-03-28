@@ -9,7 +9,7 @@ function solicitarNumero (mensaje) {
         let entrada = prompt(mensaje);
         // Verifico que no sea null, vacío o solo espacios
         if (entrada === null || entrada.trim() === "") {
-            alert("Debes ingresar un número"); //pop-up de alerta
+            console.log("Debes ingresar un número");
             continue;
         }
         // Debo convertir el string a número
@@ -18,7 +18,7 @@ function solicitarNumero (mensaje) {
         // Si es NaN
         if (isNaN(numeroConvertido)) {
             // Solicito un número válido nuevamente
-            alert("Debes ingresar un número válido.")
+            console.log("Debes ingresar un número válido.");
             continue;
         }
         // Si el número es válido
